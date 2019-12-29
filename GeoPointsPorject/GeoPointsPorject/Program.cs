@@ -14,7 +14,6 @@ namespace GeographicalPointsProject
         {
             if (!System.IO.File.Exists(@"bin\Debug\netcoreapp2.1\nlog.config"))
             {
-                //System.IO.File.Create(@"bin\Debug\netcoreapp2.1\nlog.config",0,System.IO.FileOptions.);
                 System.IO.FileStream f = System.IO.File.Create(@"bin\Debug\netcoreapp2.1\nlog.config");
                 f.Close();
             }
