@@ -12,6 +12,14 @@ namespace GeographicalPointsProject
     {
         public static void Main(string[] args)
         {
+            if (!System.IO.File.Exists(@"bin\Debug\netcoreapp2.1\nlog.config"))
+            {
+                //System.IO.File.Create(@"bin\Debug\netcoreapp2.1\nlog.config",0,System.IO.FileOptions.);
+                System.IO.FileStream f = System.IO.File.Create(@"bin\Debug\netcoreapp2.1\nlog.config");
+                f.Close();
+            }
+                
+
             var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
             try
             {
