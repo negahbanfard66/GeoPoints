@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "117f8992-eed4-422d-a00a-fb282e8c8c5a",
+		"name": "GeoPointsCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GeoPointsApi",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\":\"mohammad@test.com\",\r\n  \"password\":\"Password123$\",\r\n  \"email\": \"mohammad@gmail.com\",\r\n  \"firstName\": \"string1\",\r\n  \"lastName\": \"string2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55084/connect/SignUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55084",
+							"path": [
+								"connect",
+								"SignUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "test@GeoPoints.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Password123$",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "GPClientId",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "0AD15618-82E3-45D4-91B6-AF5502E2147A",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:55084/connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55084",
+							"path": [
+								"connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLat&Lang",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "CfDJ8HB7nC0bsudFlLh4Ss4o6j352uyZi1rcVbx_DpuKwg2o8C2n1rbBtQd8Bxgqj4BOnkDwlzwpl5jVScOmhV_wFPzONmEBL0lM1i2cR5Pf6iE8tICiQCpEbLC589YYz-M4reDUyd5CKqBgYDom2LjFigvy_ikogRnHsktdozTX9olwUNMt2VsFthBqpnOe-dB-vdG0vMUKPb4A7nEst4Mrm-esrG4pKgyCa-pMTUUPIGxHq_aryUOW-ANtSIGjXVabdcnZkb_wqCFvAg0ebAYoen4p4Wq5D6E8EVImEii3ytDV5QFuR0lWECRWsNAMKo8l2O2dlgBB7-q5-VV7Ad4PTDfaH7CO1DdmFIF2g4sLs4bA-McSsXMh2uE-ynl630KbKzXjL33MA4b_pMGgBThCvW6QGInc7JzyBtrdTxAv2eU-xhaFiWdFObQJXW2NkPVy7dGrxXns-VhznFI2NqmRqExSuXn-VNSalUASR1iAgBk2we2G6QTjo4Xy8OKJsRNotn3NNX49NC8LRrNsfbxd6ZaaqNi6w-qfzr79PltTQSnPRhyCs3MzV5Ii-qiPUufegzfftHX8j6rlxiuW1zvpcg8",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"OriginLat\":55.9697,\n\t\"OriginLon\":-96.80322,\n\t\"DestinationLat\":29.46786,\n\t\"DestinationLon\":-98.53506\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:55084/api/GeoPoints",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55084",
+							"path": [
+								"api",
+								"GeoPoints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserLat&Lang",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "CfDJ8HB7nC0bsudFlLh4Ss4o6j352uyZi1rcVbx_DpuKwg2o8C2n1rbBtQd8Bxgqj4BOnkDwlzwpl5jVScOmhV_wFPzONmEBL0lM1i2cR5Pf6iE8tICiQCpEbLC589YYz-M4reDUyd5CKqBgYDom2LjFigvy_ikogRnHsktdozTX9olwUNMt2VsFthBqpnOe-dB-vdG0vMUKPb4A7nEst4Mrm-esrG4pKgyCa-pMTUUPIGxHq_aryUOW-ANtSIGjXVabdcnZkb_wqCFvAg0ebAYoen4p4Wq5D6E8EVImEii3ytDV5QFuR0lWECRWsNAMKo8l2O2dlgBB7-q5-VV7Ad4PTDfaH7CO1DdmFIF2g4sLs4bA-McSsXMh2uE-ynl630KbKzXjL33MA4b_pMGgBThCvW6QGInc7JzyBtrdTxAv2eU-xhaFiWdFObQJXW2NkPVy7dGrxXns-VhznFI2NqmRqExSuXn-VNSalUASR1iAgBk2we2G6QTjo4Xy8OKJsRNotn3NNX49NC8LRrNsfbxd6ZaaqNi6w-qfzr79PltTQSnPRhyCs3MzV5Ii-qiPUufegzfftHX8j6rlxiuW1zvpcg8",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:55084/api/GeoPoints",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "55084",
+							"path": [
+								"api",
+								"GeoPoints"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

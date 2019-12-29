@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoPointsPorject", "GeoPointsPorject\GeoPointsPorject.csproj", "{55782277-D5AB-409A-B07D-9DBD450E7455}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{9385D786-7165-4F01-9E6A-183C1F50C13C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GP.Lib.Base", "GP.Lib.Base\GP.Lib.Base.csproj", "{D51BCFE0-FF83-4B68-957D-928D0A50EA5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GP.Lib.Repo", "GP.Lib.Repo\GP.Lib.Repo.csproj", "{184BB87B-59F8-4517-83C1-A0CF7ED6590E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GP.Lib.Services", "GP.Lib.Services\GP.Lib.Services.csproj", "{FAEAA344-49B4-4287-95CD-6AAC9FFA6E8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GP.Lib.Common", "GP.Lib.Common\GP.Lib.Common.csproj", "{F9A387DB-6DBF-4855-A238-A3C5C27707FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55782277-D5AB-409A-B07D-9DBD450E7455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55782277-D5AB-409A-B07D-9DBD450E7455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55782277-D5AB-409A-B07D-9DBD450E7455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55782277-D5AB-409A-B07D-9DBD450E7455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51BCFE0-FF83-4B68-957D-928D0A50EA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51BCFE0-FF83-4B68-957D-928D0A50EA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51BCFE0-FF83-4B68-957D-928D0A50EA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51BCFE0-FF83-4B68-957D-928D0A50EA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184BB87B-59F8-4517-83C1-A0CF7ED6590E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184BB87B-59F8-4517-83C1-A0CF7ED6590E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184BB87B-59F8-4517-83C1-A0CF7ED6590E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184BB87B-59F8-4517-83C1-A0CF7ED6590E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAEAA344-49B4-4287-95CD-6AAC9FFA6E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAEAA344-49B4-4287-95CD-6AAC9FFA6E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAEAA344-49B4-4287-95CD-6AAC9FFA6E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAEAA344-49B4-4287-95CD-6AAC9FFA6E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A387DB-6DBF-4855-A238-A3C5C27707FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A387DB-6DBF-4855-A238-A3C5C27707FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A387DB-6DBF-4855-A238-A3C5C27707FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A387DB-6DBF-4855-A238-A3C5C27707FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D51BCFE0-FF83-4B68-957D-928D0A50EA5E} = {9385D786-7165-4F01-9E6A-183C1F50C13C}
+		{184BB87B-59F8-4517-83C1-A0CF7ED6590E} = {9385D786-7165-4F01-9E6A-183C1F50C13C}
+		{FAEAA344-49B4-4287-95CD-6AAC9FFA6E8F} = {9385D786-7165-4F01-9E6A-183C1F50C13C}
+		{F9A387DB-6DBF-4855-A238-A3C5C27707FD} = {9385D786-7165-4F01-9E6A-183C1F50C13C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D646062A-2699-43F0-BCFA-8D7C4684405C}
+	EndGlobalSection
+EndGlobal
