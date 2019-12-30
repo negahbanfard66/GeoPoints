@@ -44,6 +44,7 @@ namespace GeographicalPointsProject.Controllers
         {
             try
             {
+                _cache.Reset();
                 var data = await _geoPointsService.AddAsync(new GP.Lib.Base.ViewModel.GeoPoint.VmGeoPointAdd()
                 {
                     OriginLat = geoPointsModel.OriginLat,
@@ -54,6 +55,7 @@ namespace GeographicalPointsProject.Controllers
                 });
 
                 return Ok(new { result = $"Distance : {distance(geoPointsModel)}" });
+
             }
             catch (Exception ex)
             {
